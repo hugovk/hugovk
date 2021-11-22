@@ -62,6 +62,9 @@ DETAILS = {
     "tinytext": {
         "slug": "hugovk/tinytext",
     },
+    "em-keyboard": {
+        "slug": "hugovk/em-keyboard",
+    },
     "Gutenberg": {
         "slug": "c-w/gutenberg",
     },
