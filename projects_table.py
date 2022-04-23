@@ -23,12 +23,10 @@ import argparse
 
 from prettytable import MARKDOWN, PrettyTable
 
-# Only need "pypi" if different from "project"
-# Only need "slug" if different from "{project}/{project}"
 DETAILS = {
     # "project": {
-    #     "pypi": "python-example",
-    #     "slug": "org/example",
+    #     "pypi": "python-example",  # only needed if different from "project"
+    #     "slug": "org/example",  # only needed if different from "{project}/{project}"
     # },
     "Pillow": {
         "slug": "python-pillow/Pillow",
@@ -42,6 +40,9 @@ DETAILS = {
     },
     "norwegianblue": {
         "slug": "hugovk/norwegianblue",
+    },
+    "pepotron": {
+        "slug": "hugovk/pepotron",
     },
     "humanize": {
         "slug": "jmoiron/humanize",
