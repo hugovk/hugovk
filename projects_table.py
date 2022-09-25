@@ -25,7 +25,7 @@ import argparse
 
 from prettytable import MARKDOWN, PrettyTable
 
-DETAILS = {
+DETAILS: dict[str, dict[str, str]] = {
     # "project": {
     #     "pypi": "python-example",  # only needed if different from "project"
     #     "slug": "org/example",  # only needed if different from "{project}/{project}"
@@ -80,7 +80,7 @@ DETAILS = {
 }
 
 
-def update_readme(output):
+def update_readme(output: str) -> None:
     with open("README.md") as f:
         contents = f.read()
 
@@ -97,7 +97,7 @@ def update_readme(output):
         print("README.md updated")
 
 
-def badger(project):
+def badger(project: str) -> list[str]:
     pypi = DETAILS[project].get("pypi", project)
     slug = DETAILS[project].get("slug", f"{project}/{project}")
     url = f"https://github.com/{slug}"
@@ -111,7 +111,7 @@ def badger(project):
     ]
 
 
-def projects_table():
+def projects_table() -> PrettyTable:
     table = PrettyTable()
     table.field_names = [
         "Project",
@@ -136,7 +136,7 @@ class CustomFormatter(
     pass
 
 
-if __name__ == "__main__":
+def main() -> None:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=CustomFormatter
     )
@@ -148,6 +148,10 @@ if __name__ == "__main__":
     table = projects_table()
 
     if args.update:
-        update_readme(str(table))
+        update_readme(table.get_string())
     else:
         print(table)
+
+
+if __name__ == "__main__":
+    main()
