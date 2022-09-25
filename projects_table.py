@@ -46,6 +46,9 @@ DETAILS = {
     "pepotron": {
         "slug": "hugovk/pepotron",
     },
+    "termcolor": {
+        "slug": "termcolor/termcolor",
+    },
     "humanize": {
         "slug": "jmoiron/humanize",
     },
