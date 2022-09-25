@@ -19,6 +19,8 @@ Place these markers in README.md where you want the table:
 python3 projects_table.py --update
 """
 
+from __future__ import annotations
+
 import argparse
 
 from prettytable import MARKDOWN, PrettyTable
