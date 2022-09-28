@@ -50,7 +50,7 @@ DETAILS: dict[str, dict[str, str]] = {
         "slug": "termcolor/termcolor",
     },
     "humanize": {
-        "slug": "jmoiron/humanize",
+        "slug": "python-humanize/humanize",
     },
     "PrettyTable": {
         "slug": "jazzband/prettytable",
