@@ -1,5 +1,5 @@
 Python open-source maintainer, CPython
-[triager](https://devguide.python.org/triaging/#python-triage-team) and
+[core developer](https://devguide.python.org/core-developers/responsibilities/) and
 [PEP editor](https://peps.python.org/pep-0001/#pep-editor-responsibilities-workflow).
 
 Some projects I maintain or co-maintain:
