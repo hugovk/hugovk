@@ -71,9 +71,6 @@ DETAILS: dict[str, dict[str, str]] = {
     "em-keyboard": {
         "slug": "hugovk/em-keyboard",
     },
-    "Gutenberg": {
-        "slug": "c-w/gutenberg",
-    },
     "slacker-cli": {
         "slug": "juanpabloaj/slacker-cli",
     },
