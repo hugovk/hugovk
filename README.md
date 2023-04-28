@@ -26,4 +26,20 @@ Some projects I maintain or co-maintain:
 
 [end_generated]: # (end_generated)
 
+Some small websites:
+
+* [Python logos](https://hugovk.github.io/python-logos/)
+* [Top PyPI Packages](https://hugovk.github.io/top-pypi-packages/)
+* [Python Steering Council](https://hugovk.github.io/python-steering-council/)
+* [PyPI downloads](https://hugovk.github.io/pypi-tools/charts)
+* [Helcitybikometer](https://citybikes.github.io/)
+* [How big is an explorer tile?](https://hugovk.github.io/tiles/)
+* [Wiktionary tools](https://hugovk.github.io/wiktionary-tools/)
+* [— – …](https://hugovk.github.io/copy/)
+* [Year progress bar](https://hugovk.github.io/year-progress-bar/)
+* [CHERNOBYL PROGRESS BAR](https://hugovk.github.io/chernobyl-progress-bar/)
+* [Helometer](https://hugovk.github.io/helometer/)
+* [Am I north of the Watford Gap?](https://hugovk.github.io/aminorthofthewatfordgap/)
+* [Am I south of the Watford Gap?](https://hugovk.github.io/amisouthofthewatfordgap/)
+
 [![hugovk's GitHub stats](https://github-readme-stats.vercel.app/api?username=hugovk&count_private=true&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
