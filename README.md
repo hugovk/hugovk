@@ -41,5 +41,6 @@ Some small websites:
 * [Helometer](https://hugovk.github.io/helometer/)
 * [Am I north of the Watford Gap?](https://hugovk.github.io/aminorthofthewatfordgap/)
 * [Am I south of the Watford Gap?](https://hugovk.github.io/amisouthofthewatfordgap/)
+* [Finnish words for bear](https://hugovk.github.io/finnish-bear-words/)
 
 [![hugovk's GitHub stats](https://github-readme-stats.vercel.app/api?username=hugovk&count_private=true&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
