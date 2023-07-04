@@ -34,6 +34,7 @@ Some small websites:
 * [PyPI downloads](https://hugovk.github.io/pypi-tools/charts)
 * [Helcitybikometer](https://citybikes.github.io/)
 * [How big is an explorer tile?](https://hugovk.github.io/tiles/)
+* [Transcontinental Race](https://hugovk.github.io/transconrace/)
 * [Wiktionary tools](https://hugovk.github.io/wiktionary-tools/)
 * [— – …](https://hugovk.github.io/copy/)
 * [Year progress bar](https://hugovk.github.io/year-progress-bar/)
