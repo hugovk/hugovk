@@ -74,6 +74,9 @@ DETAILS: dict[str, dict[str, str]] = {
     "stravavis": {
         "slug": "marcusvolz/strava_py",
     },
+    "flake8-implicit-str-concat": {
+        "slug": "flake8-implicit-str-concat/flake8-implicit-str-concat",
+    },
 }
 
 
