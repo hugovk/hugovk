@@ -32,6 +32,7 @@ Some small sites:
 * [Python logos](https://hugovk.github.io/python-logos/)
 * [Top PyPI Packages](https://hugovk.github.io/top-pypi-packages/)
 * [Python Steering Council](https://hugovk.github.io/python-steering-council/)
+* [Python Core Developers](https://hugovk.github.io/python-core-devs/)
 * [PyPI downloads](https://hugovk.github.io/pypi-tools/charts)
 * [Helcitybikometer](https://citybikes.github.io/)
 * [How big is an explorer tile?](https://hugovk.github.io/tiles/)
