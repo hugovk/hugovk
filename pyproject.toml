@@ -1,0 +1,35 @@
+[tool.ruff]
+fix = true
+
+lint.select = [
+  "C4",     # flake8-comprehensions
+  "E",      # pycodestyle errors
+  "EM",     # flake8-errmsg
+  "F",      # pyflakes errors
+  "I",      # isort
+  "ICN",    # flake8-import-conventions
+  "ISC",    # flake8-implicit-str-concat
+  "LOG",    # flake8-logging
+  "PGH",    # pygrep-hooks
+  "PT",     # flake8-pytest-style
+  "PYI",    # flake8-pyi
+  "RUF022", # unsorted-dunder-all
+  "RUF100", # unused noqa (yesqa)
+  "S",      # flake8-bandit
+  "UP",     # pyupgrade
+  "W",      # pycodestyle warnings
+  "YTT",    # flake8-2020
+]
+lint.ignore = [
+  "E203", # Whitespace before ':'
+  "E221", # Multiple spaces before operator
+  "E226", # Missing whitespace around arithmetic operator
+  "E241", # Multiple spaces after ','
+]
+lint.per-file-ignores."tests/**/*.py" = [
+  "S101", # Asserts allowed in tests
+]
+lint.flake8-import-conventions.aliases.datetime = "dt"
+lint.flake8-import-conventions.banned-from = [ "datetime" ]
+lint.isort.known-first-party = [ "tinytext" ]
+lint.isort.required-imports = [ "from __future__ import annotations" ]

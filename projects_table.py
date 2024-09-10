@@ -107,10 +107,10 @@ def badger(project: str) -> list[str]:
 
     return [
         f"[{project}]({url})",
-        f"[![PyPI version](https://img.shields.io/pypi/v/{pypi}?style=flat-square)](https://pypi.org/project/{pypi})",  # noqa: E501
-        f"[![Supported Python versions](https://img.shields.io/pypi/pyversions/{pypi}.svg?style=flat-square)](https://pypi.org/project/{pypi}/)",  # noqa: E501
-        f"[![GitHub last commit](https://img.shields.io/github/last-commit/{slug}?style=flat-square)]({url}/commits)",  # noqa: E501
-        f"[![PyPI downloads](https://img.shields.io/pypi/dm/{pypi}?style=flat-square)](https://pypistats.org/packages/{pypi})",  # noqa: E501
+        f"[![PyPI version](https://img.shields.io/pypi/v/{pypi}?style=flat-square)](https://pypi.org/project/{pypi})",
+        f"[![Supported Python versions](https://img.shields.io/pypi/pyversions/{pypi}.svg?style=flat-square)](https://pypi.org/project/{pypi}/)",
+        f"[![GitHub last commit](https://img.shields.io/github/last-commit/{slug}?style=flat-square)]({url}/commits)",
+        f"[![PyPI downloads](https://img.shields.io/pypi/dm/{pypi}?style=flat-square)](https://pypistats.org/packages/{pypi})",
     ]
 
 
