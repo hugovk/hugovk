@@ -77,6 +77,9 @@ DETAILS: dict[str, dict[str, str]] = {
     "flake8-implicit-str-concat": {
         "slug": "flake8-implicit-str-concat/flake8-implicit-str-concat",
     },
+    "linkotron": {
+        "slug": "hugovk/linkotron",
+    },
 }
 
 
