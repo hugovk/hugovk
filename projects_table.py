@@ -30,56 +30,26 @@ DETAILS: dict[str, dict[str, str]] = {
     #     "pypi": "python-example",  # only needed if different from "project"
     #     "slug": "org/example",  # only needed if different from "{project}/{project}"
     # },
-    "Pillow": {
-        "slug": "python-pillow/Pillow",
-    },
+    "Pillow": {"slug": "python-pillow/Pillow"},
     "pylast": {},
-    "pypistats": {
-        "slug": "hugovk/pypistats",
-    },
-    "pypinfo": {
-        "slug": "ofek/pypinfo",
-    },
-    "norwegianblue": {
-        "slug": "hugovk/norwegianblue",
-    },
-    "pepotron": {
-        "slug": "hugovk/pepotron",
-    },
-    "termcolor": {
-        "slug": "termcolor/termcolor",
-    },
-    "humanize": {
-        "slug": "python-humanize/humanize",
-    },
-    "PrettyTable": {
-        "slug": "jazzband/prettytable",
-    },
-    "Tablib": {
-        "slug": "jazzband/tablib",
-    },
-    "UltraJSON": {
-        "pypi": "ujson",
-        "slug": "ultrajson/ultrajson",
-    },
-    "OSMViz": {
-        "slug": "hugovk/osmviz",
-    },
-    "tinytext": {
-        "slug": "hugovk/tinytext",
-    },
-    "em-keyboard": {
-        "slug": "hugovk/em-keyboard",
-    },
-    "stravavis": {
-        "slug": "marcusvolz/strava_py",
-    },
+    "pypistats": {"slug": "hugovk/pypistats"},
+    "pypinfo": {"slug": "ofek/pypinfo"},
+    "norwegianblue": {"slug": "hugovk/norwegianblue"},
+    "pepotron": {"slug": "hugovk/pepotron"},
+    "termcolor": {"slug": "termcolor/termcolor"},
+    "humanize": {"slug": "python-humanize/humanize"},
+    "PrettyTable": {"slug": "jazzband/prettytable"},
+    "Tablib": {"slug": "jazzband/tablib"},
+    "UltraJSON": {"pypi": "ujson", "slug": "ultrajson/ultrajson"},
+    "OSMViz": {"slug": "hugovk/osmviz"},
+    "tinytext": {"slug": "hugovk/tinytext"},
+    "em-keyboard": {"slug": "hugovk/em-keyboard"},
+    "stravavis": {"slug": "marcusvolz/strava_py"},
     "flake8-implicit-str-concat": {
-        "slug": "flake8-implicit-str-concat/flake8-implicit-str-concat",
+        "slug": "flake8-implicit-str-concat/flake8-implicit-str-concat"
     },
-    "linkotron": {
-        "slug": "hugovk/linkotron",
-    },
+    "sphinx-lint": {"slug": "sphinx-contrib/sphinx-lint"},
+    "linkotron": {"slug": "hugovk/linkotron"},
 }
 
 
