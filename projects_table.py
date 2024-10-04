@@ -50,6 +50,9 @@ DETAILS: dict[str, dict[str, str]] = {
     },
     "sphinx-lint": {"slug": "sphinx-contrib/sphinx-lint"},
     "linkotron": {"slug": "hugovk/linkotron"},
+    "blurb": {"slug": "python/blurb"},
+    "python-docs-theme": {"slug": "python/python-docs-theme"},
+    "cherry-picker": {"slug": "python/cherry-picker"},
 }
 
 
