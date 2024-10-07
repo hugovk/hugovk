@@ -48,10 +48,13 @@ DETAILS: dict[str, dict[str, str]] = {
     "flake8-implicit-str-concat": {
         "slug": "flake8-implicit-str-concat/flake8-implicit-str-concat"
     },
-    "sphinx-lint": {"slug": "sphinx-contrib/sphinx-lint"},
+    "Sphinx Lint": {"pypi": "sphinx-lint", "slug": "sphinx-contrib/sphinx-lint"},
     "linkotron": {"slug": "hugovk/linkotron"},
     "blurb": {"slug": "python/blurb"},
-    "python-docs-theme": {"slug": "python/python-docs-theme"},
+    "Python Docs Sphinx Theme": {
+        "pypi": "python-docs-theme",
+        "slug": "python/python-docs-theme",
+    },
     "cherry-picker": {"slug": "python/cherry-picker"},
 }
 
