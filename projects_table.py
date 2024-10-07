@@ -28,28 +28,28 @@ from prettytable import MARKDOWN, PrettyTable
 DETAILS: dict[str, dict[str, str]] = {
     # "project": {
     #     "pypi": "python-example",  # only needed if different from "project"
-    #     "slug": "org/example",  # only needed if different from "{project}/{project}"
+    #     "slug": "org/example",  # only needed if different from "hugovk/{project}"
     # },
     "Pillow": {"slug": "python-pillow/Pillow"},
-    "pylast": {},
-    "pypistats": {"slug": "hugovk/pypistats"},
+    "pylast": {"slug": "pylast/pylast"},
+    "pypistats": {},
     "pypinfo": {"slug": "ofek/pypinfo"},
-    "norwegianblue": {"slug": "hugovk/norwegianblue"},
-    "pepotron": {"slug": "hugovk/pepotron"},
+    "norwegianblue": {},
+    "pepotron": {},
     "termcolor": {"slug": "termcolor/termcolor"},
     "humanize": {"slug": "python-humanize/humanize"},
     "PrettyTable": {"slug": "jazzband/prettytable"},
     "Tablib": {"slug": "jazzband/tablib"},
     "UltraJSON": {"pypi": "ujson", "slug": "ultrajson/ultrajson"},
     "OSMViz": {"slug": "hugovk/osmviz"},
-    "tinytext": {"slug": "hugovk/tinytext"},
-    "em-keyboard": {"slug": "hugovk/em-keyboard"},
+    "tinytext": {},
+    "em-keyboard": {},
     "stravavis": {"slug": "marcusvolz/strava_py"},
     "flake8-implicit-str-concat": {
         "slug": "flake8-implicit-str-concat/flake8-implicit-str-concat"
     },
     "Sphinx Lint": {"pypi": "sphinx-lint", "slug": "sphinx-contrib/sphinx-lint"},
-    "linkotron": {"slug": "hugovk/linkotron"},
+    "linkotron": {},
     "blurb": {"slug": "python/blurb"},
     "Python Docs Sphinx Theme": {
         "pypi": "python-docs-theme",
@@ -78,7 +78,7 @@ def update_readme(output: str) -> None:
 
 def badger(project: str) -> list[str]:
     pypi = DETAILS[project].get("pypi", project)
-    slug = DETAILS[project].get("slug", f"{project}/{project}")
+    slug = DETAILS[project].get("slug", f"hugovk/{project}")
     url = f"https://github.com/{slug}"
 
     return [
