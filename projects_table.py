@@ -38,7 +38,7 @@ DETAILS: dict[str, dict[str, str]] = {
     "pepotron": {},
     "termcolor": {"slug": "termcolor/termcolor"},
     "humanize": {"slug": "python-humanize/humanize"},
-    "PrettyTable": {"slug": "jazzband/prettytable"},
+    "PrettyTable": {"slug": "prettytable/prettytable"},
     "Tablib": {"slug": "jazzband/tablib"},
     "UltraJSON": {"pypi": "ujson", "slug": "ultrajson/ultrajson"},
     "OSMViz": {"slug": "hugovk/osmviz"},
