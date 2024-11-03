@@ -23,7 +23,7 @@ from __future__ import annotations
 
 import argparse
 
-from prettytable import MARKDOWN, PrettyTable
+from prettytable import PrettyTable, TableStyle
 
 DETAILS: dict[str, dict[str, str]] = {
     # "project": {
@@ -100,7 +100,7 @@ def projects_table() -> PrettyTable:
         "Downloads",
     ]
     table.align = "l"
-    table.set_style(MARKDOWN)
+    table.set_style(TableStyle.MARKDOWN)
 
     for project in DETAILS:
         table.add_row(badger(project))
