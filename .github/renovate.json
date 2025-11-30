@@ -11,7 +11,14 @@
     {
       "groupName": "requirements.txt",
       "matchPaths": ["requirements.txt"]
+    },
+    {
+      "groupName": "pre-commit",
+      "matchManagers": ["pre-commit"]
     }
   ],
+  "pre-commit": {
+    "enabled": true
+  },
   "schedule": ["on the first day of the month"]
 }
