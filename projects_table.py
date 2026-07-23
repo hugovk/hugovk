@@ -19,21 +19,29 @@ Place these markers in README.md where you want the table:
 python3 projects_table.py --update
 """
 
+# /// script
+# requires-python = ">=3.11"
+# dependencies = [
+#     "prettytable>=1",
+# ]
+# ///
+
 from __future__ import annotations
 
 import argparse
 
 from prettytable import PrettyTable, TableStyle
 
-DETAILS: dict[str, dict[str, str]] = {
+DETAILS: dict[str, dict[str, str | bool]] = {
     # "project": {
     #     "pypi": "python-example",  # only needed if different from "project"
     #     "slug": "org/example",  # only needed if different from "hugovk/{project}"
+    #     "no_github_releases": True,  # only needed if repo has no GitHub releases
     # },
     "Pillow": {"slug": "python-pillow/Pillow"},
     "pylast": {"slug": "pylast/pylast"},
     "pypistats": {},
-    "pypinfo": {"slug": "ofek/pypinfo"},
+    "pypinfo": {"slug": "ofek/pypinfo", "no_github_releases": True},
     "norwegianblue": {},
     "pepotron": {},
     "termcolor": {"slug": "termcolor/termcolor"},
@@ -81,10 +89,20 @@ def badger(project: str) -> list[str]:
     slug = DETAILS[project].get("slug", f"hugovk/{project}")
     url = f"https://github.com/{slug}"
 
+    if DETAILS[project].get("no_github_releases"):
+        released = ""
+    else:
+        released = (
+            f"[![GitHub release date]"
+            f"(https://img.shields.io/github/release-date/{slug}?style=flat-square)]"
+            f"({url}/releases)"
+        )
+
     return [
         f"[{project}]({url})",
-        f"[![PyPI version](https://img.shields.io/pypi/v/{pypi}?style=flat-square)](https://pypi.org/project/{pypi})",
         f"[![Supported Python versions](https://img.shields.io/pypi/pyversions/{pypi}.svg?style=flat-square)](https://pypi.org/project/{pypi}/)",
+        f"[![PyPI version](https://img.shields.io/pypi/v/{pypi}?style=flat-square)](https://pypi.org/project/{pypi})",
+        released,
         f"[![GitHub last commit](https://img.shields.io/github/last-commit/{slug}?style=flat-square)]({url}/commits)",
         f"[![PyPI downloads](https://img.shields.io/pypi/dm/{pypi}?style=flat-square)](https://pypistats.org/packages/{pypi})",
     ]
@@ -94,8 +112,9 @@ def projects_table() -> PrettyTable:
     table = PrettyTable()
     table.field_names = [
         "Project",
-        "Release",
         "Python versions",
+        "Release",
+        "Released",
         "Activity",
         "Downloads",
     ]
