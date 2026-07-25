@@ -94,17 +94,17 @@ def badger(project: str) -> list[str]:
     else:
         released = (
             f"[![GitHub release date]"
-            f"(https://img.shields.io/github/release-date/{slug}?style=flat-square)]"
+            f"(https://img.shields.io/github/release-date/{slug}?style=flat-square&label=)]"
             f"({url}/releases)"
         )
 
     return [
         f"[{project}]({url})",
-        f"[![Supported Python versions](https://img.shields.io/pypi/pyversions/{pypi}.svg?style=flat-square)](https://pypi.org/project/{pypi}/)",
-        f"[![PyPI version](https://img.shields.io/pypi/v/{pypi}?style=flat-square)](https://pypi.org/project/{pypi})",
+        f"[![Supported Python versions](https://img.shields.io/pypi/pyversions/{pypi}.svg?style=flat-square&label=)](https://pypi.org/project/{pypi}/)",
+        f"[![PyPI version](https://img.shields.io/pypi/v/{pypi}?style=flat-square&label=)](https://pypi.org/project/{pypi})",
         released,
-        f"[![GitHub last commit](https://img.shields.io/github/last-commit/{slug}?style=flat-square)]({url}/commits)",
-        f"[![PyPI downloads](https://img.shields.io/pypi/dm/{pypi}?style=flat-square)](https://pypistats.org/packages/{pypi})",
+        f"[![GitHub last commit](https://img.shields.io/github/last-commit/{slug}?style=flat-square&label=)]({url}/commits)",
+        f"[![PyPI downloads](https://img.shields.io/pypi/dm/{pypi}?style=flat-square&label=)](https://pypistats.org/packages/{pypi})",
     ]
 
 
@@ -115,7 +115,7 @@ def projects_table() -> PrettyTable:
         "Python versions",
         "Release",
         "Released",
-        "Activity",
+        "Last commit",
         "Downloads",
     ]
     table.align = "l"
