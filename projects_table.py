@@ -104,7 +104,7 @@ def badger(project: str) -> list[str]:
         f"[![PyPI version](https://img.shields.io/pypi/v/{pypi}?style=flat-square&label=)](https://pypi.org/project/{pypi})",
         released,
         f"[![GitHub last commit](https://img.shields.io/github/last-commit/{slug}?style=flat-square&label=)]({url}/commits)",
-        f"[![PyPI downloads](https://img.shields.io/pypi/dm/{pypi}?style=flat-square&label=)](https://pypistats.org/packages/{pypi})",
+        f"[![PyPI downloads](https://static.pepy.tech/personalized-badge/{pypi}?period=monthly&units=ABBREVIATION&right_color=GREEN&left_text=%E2%A4%93)](https://pepy.tech/projects/{pypi})",
     ]
 
 
@@ -116,7 +116,7 @@ def projects_table() -> PrettyTable:
         "Release",
         "Released",
         "Last commit",
-        "Downloads",
+        "Monthly downloads",
     ]
     table.align = "l"
     table.set_style(TableStyle.MARKDOWN)
