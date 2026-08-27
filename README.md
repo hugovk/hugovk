@@ -51,4 +51,4 @@ Some small sites:
 * [Am I south of the Watford Gap?](https://hugovk.dev/amisouthofthewatfordgap/)
 * [Finnish words for bear](https://hugovk.dev/finnish-bear-words/)
 
-[![hugovk's GitHub stats](https://github-readme-stats.vercel.app/api?username=hugovk&count_private=true&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
+[![hugovk's GitHub stats](https://github-stats-extended.vercel.app/api?username=hugovk&count_private=true&show_icons=true)](https://github.com/stats-organization/github-stats-extended)
